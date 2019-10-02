@@ -19,7 +19,7 @@ regRule允许传入一个int值（从这个数字开始依次替换，如regRule
 dfw.regularColumn('国家')
 dfw.regularColumn('市', regRule=['0435', '0431', '010', '020'])
 ```
-### 获取DataFrame原型对象：```DFWrapper.getFrame()
+### 获取DataFrame原型对象：```DFWrapper.getFrame()```
 
 ### 获取映射表（格式化映射表）```DFWrapper.getHashTable(key)```
 ```python
