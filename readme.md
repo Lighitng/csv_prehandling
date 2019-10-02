@@ -9,7 +9,8 @@ dfw = DFWrapper(df)
 ```
 ### 格式转换：```DFWrapper.transposeType([('column', 'to_type', 'holder')])```[允许链式调用]
 ```python
-dfw.transposeType(['年龄', 'int', '转换失败占位符'])
+# holder 默认为 None
+dfw.transposeType(['年龄', 'int'])
 # 支持传入基础数据类型
 dfw.transposeType(['月薪', float, '转换失败占位符'])
 ```
