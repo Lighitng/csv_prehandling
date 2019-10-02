@@ -10,6 +10,8 @@ dfw = DFWrapper(df)
 ### 格式转换：```DFWrapper.transposeType([('column', 'to_type', 'holder')])```[允许链式调用]
 ```python
 dfw.transposeType(['年龄', 'int', '转换失败占位符'])
+# 支持传入基础数据类型
+dfw.transposeType(['月薪', float, '转换失败占位符'])
 ```
 ### 格式化某列：```DFWrapper.regularColumn('columnName', regRule)```[允许链式调用]
 其中regRule代表格式化规则，默认从0开始用每个数字替换列中相同的一类值
