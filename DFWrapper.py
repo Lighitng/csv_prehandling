@@ -67,8 +67,9 @@ class DFWrapper:
     else:
       raise ValueError('Parameter [regRule] must be list or int')
     self.__columnHashTable[key] = counter
+    print(counter)
     for index, value in self.__df.loc[:, key].iteritems():
-      self.__df.loc[index, key] = counter[key]
+      self.__df.loc[index, key] = counter[value]
     return self
   def getFrame(self):
     return self.__df
